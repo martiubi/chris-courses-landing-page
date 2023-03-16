@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+header {
+    margin: auto;
+    position: relative;
+    z-index: 10;
+    font-size: 16px;
+    max-width: 1200px;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: white;
+}
+
+.navbar-toggler {
+    margin-right: 20px;
+}
+
+a.nav-link {
+    color: white !important;
+}
+
+.navbar-brand {
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+nav .login {
+    display: flex;
+    justify-content: end;
+    margin-right: 30px;
+    align-items: center;
+}
+
+.login a {
+    padding-right: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.login button {
+    background-color: #539d98;
+    color: white;
+    border: none;
+    border-radius: 9999px;
+    padding: 8px 20px 8px 20px;
+    font-weight: bold;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.menu ul li {
+    padding-left: 25px;
+}
+
+.background {
+    width: 100%;
+    position: absolute; /* activates overlaping elements*/
+    /* top:0px; --> tops until the "position:relative" parent */
+    top: 0px;
+    object-fit: cover;
+    height: 1100px;
+}
+
+.intro-text {
+    position: relative; /* activates the left,top,right,bottom properties */
+    padding-top: 6rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.intro-text h1 {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    max-width: 538px;
+}
+.intro-text .line-2 {
+    color: #90cac7;
+}
+
+.intro-text p {
+    color: white;
+    max-width: 300px;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.intro-text button {
+    margin-top: 30px;
+    background-color: white;
+    border: none;
+    color: #539d98;
+    padding: 8px 20px 8px 20px;
+    border-radius: 5px;
+}
+
+/* MEDIA QUERIES:
+MIN-WIDTH: 640PX -> ONLY TAKES EFFECT WHEN THE SCREEN IS LARGER THAN 640PX
+MAX-WIDTH: 640PX -> ONLY TAKES EFFECT WHEN THE SCREEN IS SMALLER THAN 640PX */
+
+@media (min-width: 640px) {
+    .intro-text h1 {
+        font-size: 50px;
+    }
+    .intro-text p {
+        max-width: 449px;
+        font-size: 17px;
+    }
+}
